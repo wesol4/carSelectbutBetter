@@ -3,21 +3,20 @@ import { cars } from './CarList';
 import './CarGallery.css';
 
 const CarGallery: React.FC = () => {
-	const [selectedCarIndex, setSelectedCarIndex] = useState<number | null>(null); // Wybrany samochód do powiększenia
-	const [fullscreenImageIndex, setFullscreenImageIndex] = useState<number | null>(null); // Wybrany indeks obrazka w trybie fullscreen
-	const [imageIndexes, setImageIndexes] = useState<number[]>(Array(cars.length).fill(0)); // Indeksy obrazków dla każdego samochodu
+	const [selectedCarIndex, setSelectedCarIndex] = useState<number | null>(null);
+	const [fullscreenImageIndex, setFullscreenImageIndex] = useState<number | null>(null);
+	const [imageIndexes, setImageIndexes] = useState<number[]>(Array(cars.length).fill(0));
 
 	const handleClick = (carIndex: number, imageIndex: number) => {
-		setSelectedCarIndex(carIndex); // Ustawiamy indeks samochodu do powiększenia
-		setFullscreenImageIndex(imageIndex); // Ustawiamy indeks obrazka w trybie fullscreen
+		setSelectedCarIndex(carIndex);
+		setFullscreenImageIndex(imageIndex);
 	};
 
 	const closeFullscreen = () => {
-		setSelectedCarIndex(null); // Zamykamy tryb fullscreen
-		setFullscreenImageIndex(null); // Resetujemy indeks obrazka
+		setSelectedCarIndex(null);
+		setFullscreenImageIndex(null);
 	};
 
-	// Funkcje do zmiany obrazka w miniaturce
 	const nextImage = (carIndex: number) => {
 		setImageIndexes((prevIndexes) =>
 			prevIndexes.map((index, i) =>
@@ -34,7 +33,6 @@ const CarGallery: React.FC = () => {
 		);
 	};
 
-	// Funkcje do zmiany obrazka w trybie fullscreen
 	const nextFullscreenImage = () => {
 		if (selectedCarIndex !== null && fullscreenImageIndex !== null) {
 			setFullscreenImageIndex((prevIndex) =>
@@ -51,54 +49,57 @@ const CarGallery: React.FC = () => {
 		}
 	};
 
-	// Obsługa zmiany obrazków za pomocą strzałek na klawiaturze w trybie fullscreen
 	useEffect(() => {
 		const handleKeyDown = (event: KeyboardEvent) => {
 			if (selectedCarIndex !== null && fullscreenImageIndex !== null) {
 				if (event.key === 'ArrowRight') {
-					nextFullscreenImage(); // Strzałka w prawo zmienia obrazek na następny
+					nextFullscreenImage();
 				} else if (event.key === 'ArrowLeft') {
-					prevFullscreenImage(); // Strzałka w lewo zmienia obrazek na poprzedni
+					prevFullscreenImage();
 				} else if (event.key === 'Escape') {
-					closeFullscreen(); // Zamykamy tryb fullscreen po naciśnięciu "Escape"
+					closeFullscreen();
 				}
 			}
 		};
 
-		window.addEventListener('keydown', handleKeyDown); // Dodajemy event listener na klawisze
+		window.addEventListener('keydown', handleKeyDown);
 
 		return () => {
-			window.removeEventListener('keydown', handleKeyDown); // Usuwamy event listener po zamknięciu komponentu
+			window.removeEventListener('keydown', handleKeyDown);
 		};
 	}, [selectedCarIndex, fullscreenImageIndex]);
 
 	return (
 		<div>
-			{/* Galeria miniaturek */}
 			<div className="gallery">
 				{cars.map((car, index) => (
 					<div key={index} className="car-card">
 						<div className="image-container">
-							{/* Strzałki do zmiany obrazka */}
 							<button onClick={() => prevImage(index)}>{'<'}</button>
 							<img
 								className="thumbnail"
-								src={car.imageUrls[imageIndexes[index]]} // Wyświetlaj aktualny obrazek dla tego samochodu
+								src={car.imageUrls[imageIndexes[index]]}
 								alt={car.name}
-								onClick={() => handleClick(index, imageIndexes[index])} // Kliknięcie powoduje powiększenie
+								onClick={() => handleClick(index, imageIndexes[index])}
 							/>
 							<button onClick={() => nextImage(index)}>{'>'}</button>
 						</div>
 						<div className="car-info">
-							<h3>{car.name}</h3>
-							<p><strong>Silnik:</strong> {car.engine}</p>
+							<h2>{car.name}</h2>
+							<p><strong>Silnik:</strong> {car.engine} L</p>
 							<p><strong>Moc:</strong> {car.power} KM</p>
-							<p><strong>Cena:</strong> {car.price} PLN</p>
+							<p><strong>Cena od:</strong> {car.price} PLN</p>
 							<p><strong>Uwagi:</strong> {car.comments}</p>
 							<p>
 								<strong>Otomoto:</strong>{' '}
-								<a href={car.otomoto} target="_blank" rel="noopener noreferrer">
+								<a href={car.otomotoUrl} target="_blank" rel="noopener noreferrer">
 									Zobacz na Otomoto
+								</a>
+							</p>
+							<p>
+								<strong>WWW:</strong>{' '}
+								<a href={car.wwwExample} target="_blank" rel="noopener noreferrer">
+									Zobacz na Googlu
 								</a>
 							</p>
 						</div>
@@ -106,13 +107,11 @@ const CarGallery: React.FC = () => {
 				))}
 			</div>
 
-			{/* Powiększony obrazek */}
 			{selectedCarIndex !== null && fullscreenImageIndex !== null && (
 				<div className="fullscreen">
-					{/* Strzałki do zmiany obrazka w trybie fullscreen */}
 					<button className="nav-button left" onClick={(e) => { e.stopPropagation(); prevFullscreenImage(); }}>{'<'}</button>
 					<img
-						src={cars[selectedCarIndex].imageUrls[fullscreenImageIndex]} // Wyświetlamy powiększony obrazek
+						src={cars[selectedCarIndex].imageUrls[fullscreenImageIndex]}
 						alt="Selected Car"
 						className="fullscreen-image"
 					/>

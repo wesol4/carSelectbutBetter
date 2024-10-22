@@ -57,6 +57,11 @@ button:focus {
 .car-info {
     margin-right: 100px;
     padding: 20px;
+    font-family: Lato, serif, sans-serif;
+
+    h2 {
+        font-size: 32px;
+    }
 }
 
 .fullscreen {
@@ -96,7 +101,6 @@ h1 {
     z-index: 1002;
 }
 
-/* Strzałki do nawigacji w trybie fullscreen */
 .nav-button {
     position: absolute;
     top: 50%;
@@ -121,4 +125,39 @@ h1 {
 .fullscreen-image {
     max-width: 90%;
     max-height: 90%;
+}
+
+@media (max-width: 430px) {
+    .car-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .thumbnail {
+        height: auto;
+        object-fit: contain;
+    }
+
+    .car-info {
+        margin-top: 1px;
+        font-size: 0.9em;
+    }
+
+    .fullscreen-image {
+        max-width: 100vw;
+        max-height: 100vh;
+    }
+
+    .nav-button {
+        font-size: 1.5em;
+        padding: 5px;
+    }
+
+    .close-button {
+        font-size: 1.2em;
+        padding: 5px;
+    }
 }
