@@ -84,7 +84,7 @@ const CarGallery: React.FC = () => {
 							/>
 							<button onClick={() => nextImage(index)}>{'>'}</button>
 						</div>
-						<div className="car-info">
+						<div className="car-info" style={{borderStyle: ''}}>
 							<h2>{car.name}</h2>
 							<p><strong>Silnik:</strong> {car.engine} L</p>
 							<p><strong>Moc:</strong> {car.power} KM</p>

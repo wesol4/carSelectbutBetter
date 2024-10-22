@@ -143,7 +143,11 @@ h1 {
 
     .car-info {
         margin-top: 1px;
+        margin-left: 150px;
         font-size: 0.9em;
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
     }
 
     .fullscreen-image {

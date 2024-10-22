@@ -4,6 +4,16 @@ export let cars: Car[];
 
 cars = [
 	{
+		name: "Kia Niro",
+		engine: "1.6H",
+		power: 105,
+		price: "122,900",
+		comments: "Super w środku",
+		otomotoUrl: "https://www.otomoto.pl/osobowe/kia?search%5Bfilter_enum_country_origin%5D=pl&search%5Bfilter_enum_damaged%5D=0&search%5Bfilter_enum_fuel_type%5D=hybrid&search%5Bfilter_enum_gearbox%5D=automatic&search%5Bfilter_float_mileage%3Ato%5D=100&search%5Border%5D=filter_float_price%3Aasc&search%5Badvanced_search_expanded%5D=true",
+		wwwExample: "https://www.google.com/search?q=kia+niro+2024+&sca_esv=f3c510255100d4e3&udm=2&biw=1921&bih=1925&sxsrf=ADLYWILis8jXBKCMmMzEC-gnmXpDVd5DCQ%3A1729626325906&ei=1QAYZ_KEN7vSwPAP09KB0Ak&ved=0ahUKEwiyw_-V4KKJAxU7KRAIHVNpAJoQ4dUDCBA&uact=5&oq=kia+niro+2024+&gs_lp=EgNpbWciDmtpYSBuaXJvIDIwMjQgMgQQIxgnMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESJMGUK8DWKkEcAF4AJABAJgBPaABeKoBATK4AQPIAQD4AQGYAgOgAoIBwgIGEAAYCBgewgIEEAAYHpgDAIgGAZIHATOgB8wO&sclient=img",
+		imageUrls: ["/src/assets/niro.jpeg", "src/assets/niro2.jpeg", "src/assets/niroInt.jpeg", "src/assets/niroInt2.jpeg"]
+	},
+	{
 		name: "Renault Capture",
 		engine: "1.3/1.6H",
 		power: 145,
