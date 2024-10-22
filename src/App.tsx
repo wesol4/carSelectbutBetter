@@ -4,7 +4,7 @@ import CarGallery from './CarGallery';
 const App: React.FC = () => {
     return (
         <div>
-            <h1>WHAT TO CHOOSE?!?!</h1>
+            <h1>DOMek CAR CHOOSE</h1>
             <CarGallery />
         </div>
     );
