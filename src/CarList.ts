@@ -118,7 +118,7 @@ cars = [
 		engine: "0.9",
 		power: 90,
 		price: "83,200",
-		comments: "TANIE A DOBRE!!!",
+		comments: "Tanie, dobre, do negocjacji!!",
 		otomotoUrl: "https://www.dacia.pl/katalog-nci.html?CAMPAIGN=pl-pl-d-l-def-brand-all_products-ice-go-classic-aTAGnHHs-&ORIGIN=paid_search&gad_source=1&gclid=Cj0KCQjw99e4BhDiARIsAISE7P8NUUXiK6yMB6cAlVbTp39Ve5xUwDRn6OlJ-j79rPj_u-7AIXZPE8IaAr5JEALw_wcB&gclsrc=aw.ds&model.code=BI1&sortKey=prices.discountedPriceWithTaxes&sortOrder=%2B&transmission.group=AUTOMATIC&utm_campaign=pl-pl-d-l-def-brand-all_products-ice-go-classic-aTAGnHHs-&utm_id=17630383397&utm_medium=cpc&utm_source=google",
 		wwwExample: "https://images.app.goo.gl/MnokgV49SN6644ds5",
 		imageUrls: ["/src/assets/stepway.png", "/src/assets/stepwayInt2.jpeg", "/src/assets/stepwayBack.jpeg"]
