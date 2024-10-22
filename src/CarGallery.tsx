@@ -41,7 +41,7 @@ const CarGallery: React.FC = () => {
 							<button onClick={() => prevImage(index)}>{'<'}</button>
 							<img
 								className="thumbnail"
-								src={car.imageUrls[imageIndexes[index]]} // Wyświetlaj aktualny obrazek dla tego samochodu
+								src={car.imageUrls[imageIndexes[index]]}
 								alt={car.name}
 								onClick={() => handleClick(car.imageUrls[imageIndexes[index]])}
 							/>
