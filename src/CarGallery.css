@@ -11,8 +11,17 @@ button:focus {
     outline: none;
 }
 
+.gallery {
+    /*display: flex;*/
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 10px;
+    /*z-index: 20;*/
+}
+
 .car-card {
-    display: flex;
+    /*display: flex;*/
     align-items: normal;
     margin-bottom: 20px;
     border: 1px solid #ddd;
@@ -23,7 +32,7 @@ button:focus {
 
 .car-card img {
     position: relative;
-    width: 50%;
+    width: 30%;
     height: auto;
     border-radius: 5px;
     transition: transform 0.3s ease;

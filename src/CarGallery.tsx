@@ -33,7 +33,6 @@ const CarGallery: React.FC = () => {
 
 	return (
 		<div>
-			{/* Galeria miniaturek */}
 			<div className="gallery" style={{borderStyle: ''}}>
 				{cars.map((car, index) => (
 					<div key={index} className="car-card">
