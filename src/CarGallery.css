@@ -117,12 +117,12 @@ h1 {
 }
 
 .nav-button.left {
-    left: 20px;
+    left: 55px;
     font-size: xxx-large;
 }
 
 .nav-button.right {
-    right: 20px;
+    right: 55px;
     font-size: xxx-large;
 }
 
@@ -155,9 +155,16 @@ h1 {
     }
 
     .fullscreen-image {
-        max-width: 100vw;
-        max-height: 100vh;
-        object-fit: contain;
+        max-width: 85vw;
+        max-height: 85vh;
+    }
+
+    .nav-button.left {
+        left: 3vw;
+    }
+
+    .nav-button.right {
+        right: 3vw;
     }
 
     .nav-button {
