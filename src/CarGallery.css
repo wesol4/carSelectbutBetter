@@ -131,7 +131,7 @@ h1 {
     max-height: 90%;
 }
 
-@media (max-width: 430px), (max-height: 430px) {
+@media (max-width: 812px) and (max-width: 812px) {
     .car-card {
         flex: 1 1 100%;
         max-width: 100%;
@@ -160,11 +160,11 @@ h1 {
     }
 
     .nav-button.left {
-        left: 3vw;
+        left: 10px;
     }
 
     .nav-button.right {
-        right: 3vw;
+        right: 10px;
     }
 
     .nav-button {
