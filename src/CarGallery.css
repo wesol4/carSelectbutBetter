@@ -131,7 +131,7 @@ h1 {
     max-height: 90%;
 }
 
-@media (max-width: 812px) and (max-width: 812px) {
+@media (max-width: 812px) and (orientation: portrait) {
     .car-card {
         flex: 1 1 100%;
         max-width: 100%;
@@ -179,21 +179,50 @@ h1 {
 }
 
 @media (max-width: 812px) and (orientation: landscape) {
+    .car-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .thumbnail {
+        height: auto;
+        object-fit: contain;
+    }
+
+    .car-info {
+        margin-top: 1px;
+        margin-left: 150px;
+        font-size: 0.9em;
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
     .fullscreen-image {
         max-width: 85vw;
-        max-height: 80vh;
+        max-height: 85vh;
     }
 
     .nav-button.left {
-        left: 15px;
+        left: 10px;
+        color: darkblue;
     }
 
     .nav-button.right {
-        right: 15px;
+        right: 10px;
+        color: darkblue;
     }
 
     .nav-button {
-        font-size: 1.8em;
-        padding: 8px;
+        font-size: 1.5em;
+        padding: 5px;
+    }
+
+    .close-button {
+        font-size: 1.2em;
+        padding: 5px;
     }
 }
