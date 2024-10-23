@@ -4,6 +4,16 @@ export let cars: Car[];
 
 cars = [
 	{
+		name: "Kia Stonic",
+		engine: "1.0",
+		power: 100,
+		price: "97,000",
+		comments: "Fajne, kompaktowe, ŁADNE",
+		otomotoUrl: "https://www.otomoto.pl/osobowe/kia/stonic?search%5Bfilter_enum_country_origin%5D=pl&search%5Bfilter_enum_damaged%5D=0&search%5Bfilter_enum_gearbox%5D=automatic&search%5Bfilter_float_mileage%3Ato%5D=100&search%5Border%5D=filter_float_price%3Aasc&search%5Badvanced_search_expanded%5D=true",
+		wwwExample: "https://www.google.com/search?q=kia+stonic+2024&sca_esv=dcbcef83952848e4&udm=2&biw=1916&bih=1925&sxsrf=ADLYWIKJm90PWQtQnz7LCJC3jIsJuMY3AQ%3A1729712009195&ei=iU8ZZ4nIC4i39u8Pio61-Qw&ved=0ahUKEwjJsPyun6WJAxWIm_0HHQpHLc8Q4dUDCBA&uact=5&oq=kia+stonic+2024&gs_lp=EgNpbWciD2tpYSBzdG9uaWMgMjAyNDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIrQZQ9ANYqQVwAXgAkAEAmAFZoAGlAaoBATK4AQPIAQD4AQGYAgOgArEBwgIGEAAYBxgewgIEECMYJ5gDAIgGAZIHATOgB8UL&sclient=img#vhid=R7AQCcvniZsUxM&vssid=mosaic",
+		imageUrls: ["/src/assets/stonic.jpeg", "src/assets/stonic2.jpeg", "src/assets/stonicInt.jpeg", "src/assets/stonicInt2.jpeg"]
+	},
+	{
 		name: "Kia Niro",
 		engine: "1.6H",
 		power: 105,
