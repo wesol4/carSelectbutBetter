@@ -4,6 +4,66 @@ export let cars: Car[];
 
 cars = [
 	{
+		name: "Hyundai Bayon",
+		engine: "1.0",
+		power: 100	,
+		price: "92,000",
+		comments: "Fajne, kompaktowe, ŁADNE",
+		otomotoUrl: "https://www.otomoto.pl/osobowe/hyundai/bayon?search%5Bfilter_enum_gearbox%5D=automatic&search%5Bfilter_float_mileage%3Ato%5D=100&search%5Badvanced_search_expanded%5D=true",
+		wwwExample: "https://images.app.goo.gl/JJ485GRCRyySRSuJ9",
+		imageUrls: ["/src/assets/bayon.jpeg", "src/assets/bayon2.jpeg", "src/assets/bayon3.jpeg", "src/assets/bayonInt.jpeg", "src/assets/bayonBack.jpeg"]
+	},
+	{
+		name: "Hyundai i30",
+		engine: "1.0",
+		power: 120,
+		price: "96,000",
+		comments: "Fajne, proste, dobry silnik",
+		otomotoUrl: "https://www.otomoto.pl/osobowe/hyundai/i30?search%5Bfilter_enum_country_origin%5D=pl&search%5Bfilter_enum_damaged%5D=0&search%5Bfilter_enum_fuel_type%5D%5B0%5D=petrol&search%5Bfilter_enum_fuel_type%5D%5B1%5D=petrol-cng&search%5Bfilter_enum_fuel_type%5D%5B2%5D=petrol-lpg&search%5Bfilter_enum_fuel_type%5D%5B3%5D=diesel&search%5Bfilter_enum_fuel_type%5D%5B4%5D=etanol&search%5Bfilter_enum_fuel_type%5D%5B5%5D=hybrid&search%5Bfilter_enum_fuel_type%5D%5B6%5D=plugin-hybrid&search%5Bfilter_enum_fuel_type%5D%5B7%5D=hidrogen&search%5Bfilter_enum_gearbox%5D=automatic&search%5Bfilter_float_mileage%3Ato%5D=100&search%5Border%5D=filter_float_price%3Aasc&search%5Badvanced_search_expanded%5D=true",
+		wwwExample: "https://images.app.goo.gl/3cLPec8HZTpCL3zL9",
+		imageUrls: ["/src/assets/i30.jpeg", "src/assets/i30Int.jpeg", "src/assets/i30Back.jpeg"]
+	},
+	{
+		name: "Seat Arona",
+		engine: "1.0",
+		power: 115	,
+		price: "96,600",
+		comments: "Fajne, kompaktowe, ŁADNE",
+		otomotoUrl: "https://www.otomoto.pl/osobowe/seat/arona/od-2024?search%5Bfilter_enum_gearbox%5D=automatic&search%5Bfilter_float_mileage%3Ato%5D=100&search%5Badvanced_search_expanded%5D=true",
+		wwwExample: "https://images.app.goo.gl/8MVSdHwkPYdwUJ7g7",
+		imageUrls: ["/src/assets/arona.jpeg", "src/assets/arona2.jpeg", "src/assets/aronaInt.jpeg", "src/assets/aronaInt2.jpeg", "src/assets/aronaBack.jpeg"]
+	},
+	{
+		name: "Volkswagen T-Cross",
+		engine: "1.0",
+		power: 115	,
+		price: "99,000",
+		comments: "Fajne, kompaktowe, ŁADNE",
+		otomotoUrl: "https://www.otomoto.pl/osobowe/volkswagen/t-cross/od-2004?search%5Bfilter_enum_gearbox%5D=automatic&search%5Bfilter_float_mileage%3Ato%5D=100&search%5Border%5D=filter_float_price%3Aasc&search%5Badvanced_search_expanded%5D=true",
+		wwwExample: "https://images.app.goo.gl/UNwjYvWP2uqwYkH3A",
+		imageUrls: ["/src/assets/tcross.jpeg", "src/assets/tcross2.jpeg", "src/assets/tcrossInt.jpeg", "src/assets/tcrossBack.jpeg"]
+	},
+	{
+		name: "Volkswagen Taigo",
+		engine: "1.0",
+		power: 115	,
+		price: "94,600",
+		comments: "Fajne, kompaktowe, ŁADNE",
+		otomotoUrl: "https://www.otomoto.pl/osobowe/volkswagen/taigo/od-2024?search%5Bfilter_enum_gearbox%5D=automatic&search%5Bfilter_float_mileage%3Ato%5D=100&search%5Border%5D=filter_float_price%3Aasc&search%5Badvanced_search_expanded%5D=true",
+		wwwExample: "https://images.app.goo.gl/X9YGms6BaSKye6DLA",
+		imageUrls: ["/src/assets/taigo.jpeg", "src/assets/taigo2.jpeg",  "src/assets/taigo3.jpeg", "src/assets/taigoInt.jpeg", "src/assets/taigoBack.jpeg"]
+	},
+	{
+		name: "Skoda Kamiq",
+		engine: "1.0",
+		power: 115	,
+		price: "106,000",
+		comments: "Fajne, kompaktowe, ŁADNE",
+		otomotoUrl: "https://www.otomoto.pl/osobowe/skoda/kamiq/od-2024?search%5Bfilter_enum_gearbox%5D=automatic&search%5Bfilter_float_mileage%3Ato%5D=100&search%5Border%5D=filter_float_price%3Aasc&search%5Badvanced_search_expanded%5D=true",
+		wwwExample: "https://images.app.goo.gl/yn6zCVocSdbY8rrB9",
+		imageUrls: ["/src/assets/kamiq.jpeg", "src/assets/kamiq2.jpeg", "src/assets/kamiqInt.jpeg", "src/assets/kamiqBack.jpeg"]
+	},
+	{
 		name: "Kia Stonic",
 		engine: "1.0",
 		power: 100,
@@ -82,16 +142,6 @@ cars = [
 		otomotoUrl: "https://www.otomoto.pl/osobowe/hyundai/i20/od-2024?search%5Bfilter_enum_country_origin%5D=pl&search%5Bfilter_enum_damaged%5D=0&search%5Bfilter_enum_fuel_type%5D%5B0%5D=petrol&search%5Bfilter_enum_fuel_type%5D%5B1%5D=petrol-cng&search%5Bfilter_enum_fuel_type%5D%5B2%5D=petrol-lpg&search%5Bfilter_enum_fuel_type%5D%5B3%5D=diesel&search%5Bfilter_enum_fuel_type%5D%5B4%5D=etanol&search%5Bfilter_enum_fuel_type%5D%5B5%5D=hybrid&search%5Bfilter_enum_fuel_type%5D%5B6%5D=plugin-hybrid&search%5Bfilter_enum_fuel_type%5D%5B7%5D=hidrogen&search%5Bfilter_enum_gearbox%5D=automatic&search%5Bfilter_enum_generation%5D=gen-iii-2020&search%5Bfilter_float_mileage%3Ato%5D=100&search%5Border%5D=filter_float_price%3Aasc&search%5Badvanced_search_expanded%5D=true",
 		wwwExample: "https://images.app.goo.gl/kK5Nhvgi429xzZKV8",
 		imageUrls: ["/src/assets/i20.jpeg", "src/assets/i20Int.jpeg", "src/assets/i202.jpg"]
-	},
-	{
-		name: "Hyundai i30",
-		engine: "1.5H",
-		power: 140,
-		price: "105,000",
-		comments: "Fajne, proste, dobry silnik",
-		otomotoUrl: "https://www.otomoto.pl/osobowe/hyundai/i30?search%5Bfilter_enum_country_origin%5D=pl&search%5Bfilter_enum_damaged%5D=0&search%5Bfilter_enum_fuel_type%5D%5B0%5D=petrol&search%5Bfilter_enum_fuel_type%5D%5B1%5D=petrol-cng&search%5Bfilter_enum_fuel_type%5D%5B2%5D=petrol-lpg&search%5Bfilter_enum_fuel_type%5D%5B3%5D=diesel&search%5Bfilter_enum_fuel_type%5D%5B4%5D=etanol&search%5Bfilter_enum_fuel_type%5D%5B5%5D=hybrid&search%5Bfilter_enum_fuel_type%5D%5B6%5D=plugin-hybrid&search%5Bfilter_enum_fuel_type%5D%5B7%5D=hidrogen&search%5Bfilter_enum_gearbox%5D=automatic&search%5Bfilter_float_mileage%3Ato%5D=100&search%5Border%5D=filter_float_price%3Aasc&search%5Badvanced_search_expanded%5D=true",
-		wwwExample: "https://images.app.goo.gl/3cLPec8HZTpCL3zL9",
-		imageUrls: ["/src/assets/i30.jpeg", "src/assets/i30Int.jpeg", "src/assets/i30Back.jpeg"]
 	},
 	{
 		name: "Nissan Juke",
