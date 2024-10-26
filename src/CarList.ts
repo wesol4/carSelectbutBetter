@@ -4,12 +4,32 @@ export let cars: Car[];
 
 cars = [
 	{
+		name: "Ford Puma",
+		engine: "1.0",
+		power: 125		,
+		price: "92,000",
+		comments: "Fajne, kompaktowe, ŁADNE",
+		otomotoUrl: "https://www.otomoto.pl/osobowe/ford/puma/od-2024?search%5Bfilter_enum_gearbox%5D=automatic&search%5Bfilter_float_mileage%3Ato%5D=100&search%5Border%5D=filter_float_price%3Aasc&search%5Badvanced_search_expanded%5D=true",
+		wwwExample: "https://www.google.com/search?sca_esv=5bb96e0579041c84&sxsrf=ADLYWIIZquffq54TGTqC3tPClXx5Ev8mNw:1729939588276&q=ford+puma+2024&udm=2&fbs=AEQNm0Aa4sjWe7Rqy32pFwRj0UkWd8nbOJfsBGGB5IQQO6L3J_86uWOeqwdnV0yaSF-x2jon2iao6KWCaVjfn7ahz_sf_uPKlBgHiXUTxuTOrBgkEHAZKBArNMIg_JaUOYCTVNreNhAlJbFKEmzPuAQkoiBtIhrPYKQR3WHGzgZYwxf2NkHIa-s&sa=X&ved=2ahUKEwiilJGV76uJAxUOGhAIHbmjJQEQtKgLegQIFBAB&biw=1800&bih=945&dpr=2#vhid=aOpQEABZl-iuSM&vssid=mosaic",
+		imageUrls: ["/src/assets/puma.jpeg", "src/assets/puma2.jpeg", "src/assets/puma3.jpeg", "src/assets/pumaInt.jpeg", "src/assets/pumaInt2.jpeg"]
+	},
+	{
+		name: "Kia Xceed",
+		engine: "1.5",
+		power: 140,
+		price: "110,000",
+		comments: "Fajne, kompaktowe, ŁADNE",
+		otomotoUrl: "https://www.otomoto.pl/osobowe/kia/xceed?search%5Bfilter_enum_gearbox%5D=automatic&search%5Bfilter_float_mileage%3Ato%5D=100&search%5Border%5D=filter_float_price%3Aasc&search%5Badvanced_search_expanded%5D=true",
+		wwwExample: "https://www.google.com/search?sca_esv=db4abae39b6385be&sxsrf=ADLYWIK8XdRk3chvFkJwg1VsavaAGPKerg:1729938272104&q=kia+xceed+2024&udm=2&fbs=AEQNm0Aa4sjWe7Rqy32pFwRj0UkWd8nbOJfsBGGB5IQQO6L3J_86uWOeqwdnV0yaSF-x2jon2iao6KWCaVjfn7ahz_sf_uPKlBgHiXUTxuTOrBgkEHAZKBArNMIg_JaUOYCTVNreNhAlJbFKEmzPuAQkoiBtIhrPYKQR3WHGzgZYwxf2NkHIa-s&sa=X&sqi=2&ved=2ahUKEwjnpsSh6quJAxUnAtsEHTOUIW4QtKgLegQIHBAB&biw=1800&bih=945&dpr=2#vhid=sguKWh8G573B6M&vssid=mosaic",
+		imageUrls: ["/src/assets/xceed.jpeg", "src/assets/xceed2.jpeg", "src/assets/xceedInt.jpeg", "src/assets/xceedBack.jpeg"]
+	},
+	{
 		name: "Hyundai Bayon",
 		engine: "1.0",
 		power: 100	,
 		price: "92,000",
 		comments: "Fajne, kompaktowe, ŁADNE",
-		otomotoUrl: "https://www.otomoto.pl/osobowe/hyundai/bayon?search%5Bfilter_enum_gearbox%5D=automatic&search%5Bfilter_float_mileage%3Ato%5D=100&search%5Badvanced_search_expanded%5D=true",
+		otomotoUrl: "https://www.otomoto.pl/osobowe/hyundai/bayon?search%5Bfilter_enum_gearbox%5D=automatic&search%5Bfilter_float_mileage%3Ato%5D=100&search%5Border%5D=filter_float_price%3Aasc&search%5Badvanced_search_expanded%5D=true",
 		wwwExample: "https://images.app.goo.gl/JJ485GRCRyySRSuJ9",
 		imageUrls: ["/src/assets/bayon.jpeg", "src/assets/bayon2.jpeg", "src/assets/bayon3.jpeg", "src/assets/bayonInt.jpeg", "src/assets/bayonBack.jpeg"]
 	},
@@ -131,7 +151,7 @@ cars = [
 		comments: "Duży, masywny, bezpieczny, hybryda",
 		otomotoUrl: "https://www.otomoto.pl/osobowe/dacia/duster?search%5Bfilter_enum_country_origin%5D=pl&search%5Bfilter_enum_damaged%5D=0&search%5Bfilter_enum_fuel_type%5D%5B0%5D=petrol&search%5Bfilter_enum_fuel_type%5D%5B1%5D=petrol-cng&search%5Bfilter_enum_fuel_type%5D%5B2%5D=petrol-lpg&search%5Bfilter_enum_fuel_type%5D%5B3%5D=diesel&search%5Bfilter_enum_fuel_type%5D%5B4%5D=etanol&search%5Bfilter_enum_fuel_type%5D%5B5%5D=hybrid&search%5Bfilter_enum_fuel_type%5D%5B6%5D=plugin-hybrid&search%5Bfilter_enum_fuel_type%5D%5B7%5D=hidrogen&search%5Bfilter_enum_gearbox%5D=automatic&search%5Bfilter_enum_generation%5D=gen-iii-2024&search%5Bfilter_float_mileage%3Ato%5D=100&search%5Border%5D=filter_float_price%3Aasc&search%5Badvanced_search_expanded%5D=true",
 		wwwExample: "https://images.app.goo.gl/NoabLVEm31uSr9AVA",
-		imageUrls: ["/src/assets/daster.jpg", "src/assets/dasterInt.jpeg"]
+		imageUrls: ["/src/assets/duster.jpeg", "src/assets/dasterInt.jpeg"]
 	},
 	{
 		name: "Hyundai i20",
@@ -151,7 +171,7 @@ cars = [
 		comments: "Hybryda od 115,000, dobre silniki",
 		otomotoUrl: "https://www.otomoto.pl/osobowe/nissan/juke?search%5Bfilter_enum_country_origin%5D=pl&search%5Bfilter_enum_damaged%5D=0&search%5Bfilter_enum_fuel_type%5D%5B0%5D=petrol&search%5Bfilter_enum_fuel_type%5D%5B1%5D=petrol-cng&search%5Bfilter_enum_fuel_type%5D%5B2%5D=petrol-lpg&search%5Bfilter_enum_fuel_type%5D%5B3%5D=diesel&search%5Bfilter_enum_fuel_type%5D%5B4%5D=etanol&search%5Bfilter_enum_fuel_type%5D%5B5%5D=hybrid&search%5Bfilter_enum_fuel_type%5D%5B6%5D=plugin-hybrid&search%5Bfilter_enum_fuel_type%5D%5B7%5D=hidrogen&search%5Bfilter_enum_gearbox%5D=automatic&search%5Bfilter_float_mileage%3Ato%5D=100&search%5Border%5D=filter_float_price%3Aasc&search%5Badvanced_search_expanded%5D=true",
 		wwwExample: "https://images.app.goo.gl/zuEAUtpPiqkHPExa7",
-		imageUrls: ["/src/assets/juke.jpeg", "/src/assets/juke2.jpeg", "src/assets/jukeInt.jpeg", "src/assets/jukeInt2.jpeg", "/src/assets/jukeBack.jpeg"]
+		imageUrls: ["/src/assets/juke.jpeg", "/src/assets/juke2.jpeg", "src/assets/jukeInt.jpg", "src/assets/jukeInt2.jpg", "/src/assets/jukeBack.jpeg"]
 	},
 	{
 		name: "Hyundai Kona",
