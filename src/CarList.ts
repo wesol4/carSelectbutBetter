@@ -7,7 +7,7 @@ cars = [
 		name: "Ford Puma",
 		engine: "1.0",
 		power: 125		,
-		price: "92,000",
+		price: "110,000",
 		comments: "Fajne, kompaktowe, ŁADNE",
 		otomotoUrl: "https://www.otomoto.pl/osobowe/ford/puma/od-2024?search%5Bfilter_enum_gearbox%5D=automatic&search%5Bfilter_float_mileage%3Ato%5D=100&search%5Border%5D=filter_float_price%3Aasc&search%5Badvanced_search_expanded%5D=true",
 		wwwExample: "https://www.google.com/search?sca_esv=5bb96e0579041c84&sxsrf=ADLYWIIZquffq54TGTqC3tPClXx5Ev8mNw:1729939588276&q=ford+puma+2024&udm=2&fbs=AEQNm0Aa4sjWe7Rqy32pFwRj0UkWd8nbOJfsBGGB5IQQO6L3J_86uWOeqwdnV0yaSF-x2jon2iao6KWCaVjfn7ahz_sf_uPKlBgHiXUTxuTOrBgkEHAZKBArNMIg_JaUOYCTVNreNhAlJbFKEmzPuAQkoiBtIhrPYKQR3WHGzgZYwxf2NkHIa-s&sa=X&ved=2ahUKEwiilJGV76uJAxUOGhAIHbmjJQEQtKgLegQIFBAB&biw=1800&bih=945&dpr=2#vhid=aOpQEABZl-iuSM&vssid=mosaic",
