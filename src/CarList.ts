@@ -171,7 +171,7 @@ cars = [
 		comments: "Hybryda od 115,000, dobre silniki",
 		otomotoUrl: "https://www.otomoto.pl/osobowe/nissan/juke?search%5Bfilter_enum_country_origin%5D=pl&search%5Bfilter_enum_damaged%5D=0&search%5Bfilter_enum_fuel_type%5D%5B0%5D=petrol&search%5Bfilter_enum_fuel_type%5D%5B1%5D=petrol-cng&search%5Bfilter_enum_fuel_type%5D%5B2%5D=petrol-lpg&search%5Bfilter_enum_fuel_type%5D%5B3%5D=diesel&search%5Bfilter_enum_fuel_type%5D%5B4%5D=etanol&search%5Bfilter_enum_fuel_type%5D%5B5%5D=hybrid&search%5Bfilter_enum_fuel_type%5D%5B6%5D=plugin-hybrid&search%5Bfilter_enum_fuel_type%5D%5B7%5D=hidrogen&search%5Bfilter_enum_gearbox%5D=automatic&search%5Bfilter_float_mileage%3Ato%5D=100&search%5Border%5D=filter_float_price%3Aasc&search%5Badvanced_search_expanded%5D=true",
 		wwwExample: "https://images.app.goo.gl/zuEAUtpPiqkHPExa7",
-		imageUrls: ["/src/assets/juke.jpeg", "/src/assets/juke2.jpeg", "src/assets/jukeInt.jpg", "src/assets/jukeInt2.jpg", "/src/assets/jukeBack.jpeg"]
+		imageUrls: ["/src/assets/juke.jpeg", "/src/assets/juke2.jpeg", "src/assets/jukeInt.jpeg", "src/assets/jukeInt2.jpeg","src/assets/jukeInt3.jpeg", "/src/assets/jukeBack.jpeg"]
 	},
 	{
 		name: "Hyundai Kona",
