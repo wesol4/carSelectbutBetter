@@ -166,6 +166,7 @@ cars = [
 		otomotoUrl: "https://www.otomoto.pl/osobowe/lexus/nx/od-2024",
 		wwwExample: "https://www.google.com/search?q=lexus+nx+2024",
 		imageUrls: ["/src/assets/nx.jpeg", "/src/assets/nx_2.jpeg", "/src/assets/nx_3.jpeg", "/src/assets/nx_int.jpeg", "/src/assets/nx_int2.jpeg"],
-		wymiary: "4660 × 1865 × 1670 mm"
+		wymiary: "4660 × 1865 × 1670 mm",
+		yt: "https://www.youtube.com/watch?v=kmlyHoSRmdw"
 	},
 ];

@@ -8,4 +8,5 @@ export type Car = {
 	wwwExample: string;
 	imageUrls: string[];
 	wymiary?: string;
+	yt?: string;
 };

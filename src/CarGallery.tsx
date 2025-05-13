@@ -92,6 +92,12 @@ const CarGallery: React.FC = () => {
 							<p><strong>Uwagi:</strong> {car.comments}</p>
 							<p><strong>Wymiary:</strong> {car.wymiary}</p>
 							<p>
+								<strong>YouTube:</strong>{' '}
+								<a href={car.yt} target="_blank" rel="noopener noreferrer">
+									Zobacz na YouTube
+								</a>
+							</p>
+							<p>
 								<strong>Otomoto:</strong>{' '}
 								<a href={car.otomotoUrl} target="_blank" rel="noopener noreferrer">
 									Zobacz na Otomoto
