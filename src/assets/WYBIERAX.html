@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5173/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh"
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="./WYBIERAX_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5173/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WYBIERAX</title>
+  <style type="text/css" data-vite-dev-id="/home/wesol/git/carSelectbutBetter/src/CarGallery.css">button {
+    background-color: transparent;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+button:focus {
+    outline: none;
+}
+
+.gallery {
+    /*display: flex;*/
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 10px;
+}
+
+.car-card {
+    display: flex;
+    align-items: normal;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.car-card img {
+    position: relative;
+    /*width: 30%;*/
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail {
+    width: 250px;
+    height: auto;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.thumbnail:hover {
+    transform: scale(1.10);
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+}
+
+.car-info {
+    margin-right: 100px;
+    padding: 20px;
+    font-family: Lato, serif, sans-serif;
+
+    h2 {
+        font-size: 32px;
+    }
+}
+
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.fullscreen-image {
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: contain;
+}
+
+h1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.close-button {
+    position: fixed;
+    top: 90px;
+    right: 60px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1002;
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2em;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.nav-button.left {
+    left: 55px;
+    font-size: xxx-large;
+}
+
+.nav-button.right {
+    right: 55px;
+    font-size: xxx-large;
+}
+
+.fullscreen-image {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+@media (max-width: 812px) and (orientation: portrait) {
+    .car-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .thumbnail {
+        height: auto;
+        object-fit: contain;
+    }
+
+    .car-info {
+        margin-top: 1px;
+        margin-left: 150px;
+        font-size: 0.9em;
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .fullscreen-image {
+        max-width: 85vw;
+        max-height: 85vh;
+    }
+
+    .nav-button.left {
+        left: 10px;
+    }
+
+    .nav-button.right {
+        right: 10px;
+    }
+
+    .nav-button {
+        font-size: 1.5em;
+        padding: 5px;
+    }
+
+    .close-button {
+        font-size: 1.2em;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 812px) and (orientation: landscape) {
+    .car-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .thumbnail {
+        height: auto;
+        object-fit: contain;
+    }
+
+    .car-info {
+        margin-top: 1px;
+        margin-left: 150px;
+        font-size: 0.9em;
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .fullscreen-image {
+        max-width: 85vw;
+        max-height: 85vh;
+    }
+
+    .nav-button.left {
+        left: 10px;
+        color: darkblue;
+    }
+
+    .nav-button.right {
+        right: 10px;
+        color: darkblue;
+    }
+
+    .nav-button {
+        font-size: 1.5em;
+        padding: 5px;
+    }
+
+    .close-button {
+        font-size: 1.2em;
+        padding: 5px;
+    }
+}
+</style><style type="text/css" data-vite-dev-id="/home/wesol/git/carSelectbutBetter/src/index.css">:root {
+  font-family: Lato;
+  line-height: 1.5;
+  font-weight: 800;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #090808;
+
+}
+</style></head>
+  <body>
+    <div id="root"><div><h1>CHOOSE your dream car</h1><div><div class="gallery"><div class="car-card"><div class="image-container"><button>&lt;</button><img class="thumbnail" src="./WYBIERAX_files/vitara.jpeg" alt="Suzuki Vitara"><button>&gt;</button></div><div class="car-info"><h2>Suzuki Vitara</h2><p><strong>Silnik:</strong> 1.5H L</p><p><strong>Moc:</strong> 130 KM</p><p><strong>Cena od:</strong> 105,000 PLN</p><p><strong>Uwagi:</strong> Klasycznie wygląda :) Fajne auto</p><p><strong>Otomoto:</strong> <a href="https://www.otomoto.pl/osobowe/suzuki/vitara?search%5Bfilter_enum_country_origin%5D=pl&amp;search%5Bfilter_enum_damaged%5D=0&amp;search%5Bfilter_enum_fuel_type%5D%5B0%5D=petrol&amp;search%5Bfilter_enum_fuel_type%5D%5B1%5D=petrol-cng&amp;search%5Bfilter_enum_fuel_type%5D%5B2%5D=petrol-lpg&amp;search%5Bfilter_enum_fuel_type%5D%5B3%5D=diesel&amp;search%5Bfilter_enum_fuel_type%5D%5B4%5D=etanol&amp;search%5Bfilter_enum_fuel_type%5D%5B5%5D=hybrid&amp;search%5Bfilter_enum_fuel_type%5D%5B6%5D=plugin-hybrid&amp;search%5Bfilter_enum_fuel_type%5D%5B7%5D=hidrogen&amp;search%5Bfilter_enum_gearbox%5D=automatic&amp;search%5Bfilter_float_mileage%3Ato%5D=100&amp;search%5Border%5D=filter_float_price%3Aasc&amp;search%5Badvanced_search_expanded%5D=true" target="_blank" rel="noopener noreferrer">Zobacz na Otomoto</a></p><p><strong>WWW:</strong> <a href="https://images.app.goo.gl/5SGiB2CPuSbgXDk78" target="_blank" rel="noopener noreferrer">Zobacz na Googlu</a></p></div></div><div class="car-card"><div class="image-container"><button>&lt;</button><img class="thumbnail" src="./WYBIERAX_files/puma.jpeg" alt="Ford Puma"><button>&gt;</button></div><div class="car-info"><h2>Ford Puma</h2><p><strong>Silnik:</strong> 1.0 L</p><p><strong>Moc:</strong> 125 KM</p><p><strong>Cena od:</strong> 110,000 PLN</p><p><strong>Uwagi:</strong> Mega dynamicznem, nowoczesne</p><p><strong>Otomoto:</strong> <a href="https://www.otomoto.pl/osobowe/ford/puma/od-2024?search%5Bfilter_enum_gearbox%5D=automatic&amp;search%5Bfilter_float_mileage%3Ato%5D=100&amp;search%5Border%5D=filter_float_price%3Aasc&amp;search%5Badvanced_search_expanded%5D=true" target="_blank" rel="noopener noreferrer">Zobacz na Otomoto</a></p><p><strong>WWW:</strong> <a href="https://www.google.com/search?sca_esv=5bb96e0579041c84&amp;sxsrf=ADLYWIIZquffq54TGTqC3tPClXx5Ev8mNw:1729939588276&amp;q=ford+puma+2024&amp;udm=2&amp;fbs=AEQNm0Aa4sjWe7Rqy32pFwRj0UkWd8nbOJfsBGGB5IQQO6L3J_86uWOeqwdnV0yaSF-x2jon2iao6KWCaVjfn7ahz_sf_uPKlBgHiXUTxuTOrBgkEHAZKBArNMIg_JaUOYCTVNreNhAlJbFKEmzPuAQkoiBtIhrPYKQR3WHGzgZYwxf2NkHIa-s&amp;sa=X&amp;ved=2ahUKEwiilJGV76uJAxUOGhAIHbmjJQEQtKgLegQIFBAB&amp;biw=1800&amp;bih=945&amp;dpr=2#vhid=aOpQEABZl-iuSM&amp;vssid=mosaic" target="_blank" rel="noopener noreferrer">Zobacz na Googlu</a></p></div></div><div class="car-card"><div class="image-container"><button>&lt;</button><img class="thumbnail" src="./WYBIERAX_files/capture.jpeg" alt="Renault Capture"><button>&gt;</button></div><div class="car-info"><h2>Renault Capture</h2><p><strong>Silnik:</strong> 1.3/1.6H L</p><p><strong>Moc:</strong> 145 KM</p><p><strong>Cena od:</strong> 111,000 PLN</p><p><strong>Uwagi:</strong> idealna wielkość, super nowocześnie wygląda, ma hybrydę, brak na razie promocji na koniec roku</p><p><strong>Otomoto:</strong> <a href="https://www.otomoto.pl/osobowe/renault/captur/od-2024?search%5Bfilter_enum_country_origin%5D=pl&amp;search%5Bfilter_enum_damaged%5D=0&amp;search%5Bfilter_enum_fuel_type%5D%5B0%5D=petrol&amp;search%5Bfilter_enum_fuel_type%5D%5B1%5D=petrol-cng&amp;search%5Bfilter_enum_fuel_type%5D%5B2%5D=petrol-lpg&amp;search%5Bfilter_enum_fuel_type%5D%5B3%5D=diesel&amp;search%5Bfilter_enum_fuel_type%5D%5B4%5D=etanol&amp;search%5Bfilter_enum_fuel_type%5D%5B5%5D=hybrid&amp;search%5Bfilter_enum_fuel_type%5D%5B6%5D=plugin-hybrid&amp;search%5Bfilter_enum_fuel_type%5D%5B7%5D=hidrogen&amp;search%5Bfilter_enum_gearbox%5D=automatic&amp;search%5Bfilter_float_mileage%3Ato%5D=100&amp;search%5Border%5D=filter_float_price%3Aasc&amp;search%5Badvanced_search_expanded%5D=true" target="_blank" rel="noopener noreferrer">Zobacz na Otomoto</a></p><p><strong>WWW:</strong> <a href="https://images.app.goo.gl/32oMny2CFxVru9ta6" target="_blank" rel="noopener noreferrer">Zobacz na Googlu</a></p></div></div><div class="car-card"><div class="image-container"><button>&lt;</button><img class="thumbnail" src="./WYBIERAX_files/kona.jpeg" alt="Hyundai Kona"><button>&gt;</button></div><div class="car-info"><h2>Hyundai Kona</h2><p><strong>Silnik:</strong> 1.0 L</p><p><strong>Moc:</strong> 120 KM</p><p><strong>Cena od:</strong> 112,000 PLN</p><p><strong>Uwagi:</strong> Hybryda od 117,000</p><p><strong>Otomoto:</strong> <a href="https://www.otomoto.pl/osobowe/hyundai/kona?search%5Bfilter_enum_country_origin%5D=pl&amp;search%5Bfilter_enum_damaged%5D=0&amp;search%5Bfilter_enum_fuel_type%5D%5B0%5D=petrol&amp;search%5Bfilter_enum_fuel_type%5D%5B1%5D=petrol-cng&amp;search%5Bfilter_enum_fuel_type%5D%5B2%5D=petrol-lpg&amp;search%5Bfilter_enum_fuel_type%5D%5B3%5D=diesel&amp;search%5Bfilter_enum_fuel_type%5D%5B4%5D=etanol&amp;search%5Bfilter_enum_fuel_type%5D%5B5%5D=hybrid&amp;search%5Bfilter_enum_fuel_type%5D%5B6%5D=plugin-hybrid&amp;search%5Bfilter_enum_fuel_type%5D%5B7%5D=hidrogen&amp;search%5Bfilter_enum_gearbox%5D=automatic&amp;search%5Bfilter_float_mileage%3Ato%5D=100&amp;search%5Border%5D=filter_float_price%3Aasc&amp;search%5Badvanced_search_expanded%5D=true" target="_blank" rel="noopener noreferrer">Zobacz na Otomoto</a></p><p><strong>WWW:</strong> <a href="https://images.app.goo.gl/cx6CwWHHVMep2wxA6" target="_blank" rel="noopener noreferrer">Zobacz na Googlu</a></p></div></div><div class="car-card"><div class="image-container"><button>&lt;</button><img class="thumbnail" src="./WYBIERAX_files/asx.jpeg" alt="Mitsubishi ASX"><button>&gt;</button></div><div class="car-info"><h2>Mitsubishi ASX</h2><p><strong>Silnik:</strong> 1.3 L</p><p><strong>Moc:</strong> 158 KM</p><p><strong>Cena od:</strong> 117,000 PLN</p><p><strong>Uwagi:</strong> 5 lat gwarancji, mild hibrid</p><p><strong>Otomoto:</strong> <a href="https://www.otomoto.pl/osobowe/mitsubishi/asx/od-2024?search%5Bfilter_enum_country_origin%5D=pl&amp;search%5Bfilter_enum_damaged%5D=0&amp;search%5Bfilter_enum_fuel_type%5D%5B0%5D=petrol&amp;search%5Bfilter_enum_fuel_type%5D%5B1%5D=petrol-cng&amp;search%5Bfilter_enum_fuel_type%5D%5B2%5D=petrol-lpg&amp;search%5Bfilter_enum_fuel_type%5D%5B3%5D=diesel&amp;search%5Bfilter_enum_fuel_type%5D%5B4%5D=etanol&amp;search%5Bfilter_enum_fuel_type%5D%5B5%5D=hybrid&amp;search%5Bfilter_enum_fuel_type%5D%5B6%5D=plugin-hybrid&amp;search%5Bfilter_enum_fuel_type%5D%5B7%5D=hidrogen&amp;search%5Bfilter_enum_gearbox%5D=automatic&amp;search%5Border%5D=filter_float_price%3Aasc&amp;search%5Badvanced_search_expanded%5D=true" target="_blank" rel="noopener noreferrer">Zobacz na Otomoto</a></p><p><strong>WWW:</strong> <a href="https://www.google.com/search?sca_esv=31fc9eb8bb598b81&amp;sxsrf=ADLYWIJtQsf5sgfEcOAjn2_0D0u1q1YQuQ:1729592537749&amp;q=Mitsubishi+ASX+2024&amp;udm=2&amp;fbs=AEQNm0Aa4sjWe7Rqy32pFwRj0UkWd8nbOJfsBGGB5IQQO6L3J_86uWOeqwdnV0yaSF-x2jon2iao6KWCaVjfn7ahz_sf_uPKlBgHiXUTxuTOrBgkEHAZKBArNMIg_JaUOYCTVNreNhAlJbFKEmzPuAQkoiBtIhrPYKQR3WHGzgZYwxf2NkHIa-s&amp;sa=X&amp;ved=2ahUKEwiy-cWm4qGJAxUXgv0HHeN_FvMQtKgLegQIHRAB&amp;biw=1909&amp;bih=1925&amp;dpr=1" target="_blank" rel="noopener noreferrer">Zobacz na Googlu</a></p></div></div><div class="car-card"><div class="image-container"><button>&lt;</button><img class="thumbnail" src="./WYBIERAX_files/chr.jpg" alt="Toyota CHR"><button>&gt;</button></div><div class="car-info"><h2>Toyota CHR</h2><p><strong>Silnik:</strong> 1.8H L</p><p><strong>Moc:</strong> 140 KM</p><p><strong>Cena od:</strong> 120,000 PLN</p><p><strong>Uwagi:</strong> Jakościowe, klimatyzacja automatyczna (dwustrefowa), 17 felgi, slabe klamki</p><p><strong>Otomoto:</strong> <a href="https://www.otomoto.pl/osobowe/toyota/c-hr?search%5Bfilter_enum_country_origin%5D=pl&amp;search%5Bfilter_enum_damaged%5D=0&amp;search%5Bfilter_enum_fuel_type%5D%5B0%5D=petrol&amp;search%5Bfilter_enum_fuel_type%5D%5B1%5D=petrol-cng&amp;search%5Bfilter_enum_fuel_type%5D%5B2%5D=petrol-lpg&amp;search%5Bfilter_enum_fuel_type%5D%5B3%5D=diesel&amp;search%5Bfilter_enum_fuel_type%5D%5B4%5D=etanol&amp;search%5Bfilter_enum_fuel_type%5D%5B5%5D=hybrid&amp;search%5Bfilter_enum_fuel_type%5D%5B6%5D=plugin-hybrid&amp;search%5Bfilter_enum_fuel_type%5D%5B7%5D=hidrogen&amp;search%5Bfilter_enum_gearbox%5D=automatic&amp;search%5Bfilter_float_mileage%3Ato%5D=100&amp;search%5Border%5D=filter_float_price%3Aasc&amp;search%5Badvanced_search_expanded%5D=true" target="_blank" rel="noopener noreferrer">Zobacz na Otomoto</a></p><p><strong>WWW:</strong> <a href="https://images.app.goo.gl/t9sbBjjfVKXTdoVr5" target="_blank" rel="noopener noreferrer">Zobacz na Googlu</a></p></div></div><div class="car-card"><div class="image-container"><button>&lt;</button><img class="thumbnail" src="./WYBIERAX_files/duster.jpeg" alt="Dacia Duster"><button>&gt;</button></div><div class="car-info"><h2>Dacia Duster</h2><p><strong>Silnik:</strong> 1.6H L</p><p><strong>Moc:</strong> 140 KM</p><p><strong>Cena od:</strong> 117,000 PLN</p><p><strong>Uwagi:</strong> Duży, masywny, bezpieczny, hybryda</p><p><strong>Otomoto:</strong> <a href="https://www.otomoto.pl/osobowe/dacia/duster?search%5Bfilter_enum_country_origin%5D=pl&amp;search%5Bfilter_enum_damaged%5D=0&amp;search%5Bfilter_enum_fuel_type%5D%5B0%5D=petrol&amp;search%5Bfilter_enum_fuel_type%5D%5B1%5D=petrol-cng&amp;search%5Bfilter_enum_fuel_type%5D%5B2%5D=petrol-lpg&amp;search%5Bfilter_enum_fuel_type%5D%5B3%5D=diesel&amp;search%5Bfilter_enum_fuel_type%5D%5B4%5D=etanol&amp;search%5Bfilter_enum_fuel_type%5D%5B5%5D=hybrid&amp;search%5Bfilter_enum_fuel_type%5D%5B6%5D=plugin-hybrid&amp;search%5Bfilter_enum_fuel_type%5D%5B7%5D=hidrogen&amp;search%5Bfilter_enum_gearbox%5D=automatic&amp;search%5Bfilter_enum_generation%5D=gen-iii-2024&amp;search%5Bfilter_float_mileage%3Ato%5D=100&amp;search%5Border%5D=filter_float_price%3Aasc&amp;search%5Badvanced_search_expanded%5D=true" target="_blank" rel="noopener noreferrer">Zobacz na Otomoto</a></p><p><strong>WWW:</strong> <a href="https://images.app.goo.gl/NoabLVEm31uSr9AVA" target="_blank" rel="noopener noreferrer">Zobacz na Googlu</a></p></div></div><div class="car-card"><div class="image-container"><button>&lt;</button><img class="thumbnail" src="./WYBIERAX_files/mghs_2.jpg" alt="MG HS"><button>&gt;</button></div><div class="car-info"><h2>MG HS</h2><p><strong>Silnik:</strong> 1.5H L</p><p><strong>Moc:</strong> 170 KM</p><p><strong>Cena od:</strong> 109,900 PLN</p><p><strong>Uwagi:</strong> Tanio, ale chińśczyk</p><p><strong>Otomoto:</strong> <a href="https://www.otomoto.pl/osobowe/mg/hs?search%5Bfilter_enum_country_origin%5D=pl&amp;search%5Bfilter_enum_damaged%5D=0&amp;search%5Bfilter_enum_fuel_type%5D%5B0%5D=petrol&amp;search%5Bfilter_enum_fuel_type%5D%5B1%5D=petrol-cng&amp;search%5Bfilter_enum_fuel_type%5D%5B2%5D=petrol-lpg&amp;search%5Bfilter_enum_fuel_type%5D%5B3%5D=diesel&amp;search%5Bfilter_enum_fuel_type%5D%5B4%5D=etanol&amp;search%5Bfilter_enum_fuel_type%5D%5B5%5D=hybrid&amp;search%5Bfilter_enum_fuel_type%5D%5B6%5D=plugin-hybrid&amp;search%5Bfilter_enum_fuel_type%5D%5B7%5D=hidrogen&amp;search%5Bfilter_enum_gearbox%5D=automatic&amp;search%5Bfilter_float_mileage%3Ato%5D=100&amp;search%5Border%5D=filter_float_price%3Aasc&amp;search%5Badvanced_search_expanded%5D=true" target="_blank" rel="noopener noreferrer">Zobacz na Otomoto</a></p><p><strong>WWW:</strong> <a href="http://localhost:5173/" target="_blank" rel="noopener noreferrer">Zobacz na Googlu</a></p></div></div><div class="car-card"><div class="image-container"><button>&lt;</button><img class="thumbnail" src="./WYBIERAX_files/qashqai.jpeg" alt="Nissan Qashqai"><button>&gt;</button></div><div class="car-info"><h2>Nissan Qashqai</h2><p><strong>Silnik:</strong> 1.3 L</p><p><strong>Moc:</strong> 158 KM</p><p><strong>Cena od:</strong> 125,000 PLN</p><p><strong>Uwagi:</strong> Mega fajnie w środku, dobry feeling</p><p><strong>Otomoto:</strong> <a href="https://www.otomoto.pl/osobowe/nissan/qashqai?search%5Bfilter_enum_country_origin%5D=pl&amp;search%5Bfilter_enum_damaged%5D=0&amp;search%5Bfilter_enum_fuel_type%5D%5B0%5D=petrol&amp;search%5Bfilter_enum_fuel_type%5D%5B1%5D=petrol-cng&amp;search%5Bfilter_enum_fuel_type%5D%5B2%5D=petrol-lpg&amp;search%5Bfilter_enum_fuel_type%5D%5B3%5D=diesel&amp;search%5Bfilter_enum_fuel_type%5D%5B4%5D=etanol&amp;search%5Bfilter_enum_fuel_type%5D%5B5%5D=hybrid&amp;search%5Bfilter_enum_fuel_type%5D%5B6%5D=plugin-hybrid&amp;search%5Bfilter_enum_fuel_type%5D%5B7%5D=hidrogen&amp;search%5Bfilter_enum_gearbox%5D=automatic&amp;search%5Bfilter_enum_generation%5D=gen-iii-2021&amp;search%5Bfilter_float_mileage%3Ato%5D=100&amp;search%5Border%5D=filter_float_price%3Aasc&amp;search%5Badvanced_search_expanded%5D=true" target="_blank" rel="noopener noreferrer">Zobacz na Otomoto</a></p><p><strong>WWW:</strong> <a href="https://images.app.goo.gl/Gotkx6i3az5LyugEA" target="_blank" rel="noopener noreferrer">Zobacz na Googlu</a></p></div></div><div class="car-card"><div class="image-container"><button>&lt;</button><img class="thumbnail" src="./WYBIERAX_files/zs.jpeg" alt="MG ZS"><button>&gt;</button></div><div class="car-info"><h2>MG ZS</h2><p><strong>Silnik:</strong> 1.5h L</p><p><strong>Moc:</strong> 0 KM</p><p><strong>Cena od:</strong> 105,000 PLN</p><p><strong>Uwagi:</strong> Będzie w listopadzie, 7 lat gwarancji, chińczyk</p><p><strong>Otomoto:</strong> <a href="https://www.otomoto.pl/osobowe/mg/zs?search%5Bfilter_enum_country_origin%5D=pl&amp;search%5Bfilter_enum_damaged%5D=0&amp;search%5Bfilter_enum_fuel_type%5D%5B0%5D=petrol&amp;search%5Bfilter_enum_fuel_type%5D%5B1%5D=petrol-cng&amp;search%5Bfilter_enum_fuel_type%5D%5B2%5D=petrol-lpg&amp;search%5Bfilter_enum_fuel_type%5D%5B3%5D=diesel&amp;search%5Bfilter_enum_fuel_type%5D%5B4%5D=etanol&amp;search%5Bfilter_enum_fuel_type%5D%5B5%5D=hybrid&amp;search%5Bfilter_enum_fuel_type%5D%5B6%5D=plugin-hybrid&amp;search%5Bfilter_enum_fuel_type%5D%5B7%5D=hidrogen&amp;search%5Bfilter_float_mileage%3Ato%5D=100&amp;search%5Border%5D=filter_float_price%3Aasc&amp;search%5Badvanced_search_expanded%5D=true" target="_blank" rel="noopener noreferrer">Zobacz na Otomoto</a></p><p><strong>WWW:</strong> <a href="https://www.youtube.com/watch?app=desktop&amp;v=z_kZuv5GnN8" target="_blank" rel="noopener noreferrer">Zobacz na Googlu</a></p></div></div></div></div></div></div>
+    <script type="module" src="./WYBIERAX_files/main.tsx"></script>
+  
+
+</body></html>

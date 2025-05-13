@@ -7,4 +7,5 @@ export type Car = {
 	otomotoUrl: string;
 	wwwExample: string;
 	imageUrls: string[];
+	wymiary?: string;
 };

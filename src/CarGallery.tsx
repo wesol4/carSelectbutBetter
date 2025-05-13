@@ -90,6 +90,7 @@ const CarGallery: React.FC = () => {
 							<p><strong>Moc:</strong> {car.power} KM</p>
 							<p><strong>Cena od:</strong> {car.price} PLN</p>
 							<p><strong>Uwagi:</strong> {car.comments}</p>
+							<p><strong>Wymiary:</strong> {car.wymiary}</p>
 							<p>
 								<strong>Otomoto:</strong>{' '}
 								<a href={car.otomotoUrl} target="_blank" rel="noopener noreferrer">
