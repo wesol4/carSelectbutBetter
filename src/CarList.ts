@@ -113,4 +113,59 @@ cars = [
 		imageUrls: ["/src/assets/zs.jpeg", "src/assets/zsInt.jpeg"],
 		wymiary: "4430 × 1818 × 1635 mm "
 	},
+{
+		name: "Volvo XC60",
+		engine: "B4 mild hybrid",
+		power: 197,
+		price: "230,000",
+		comments: "Komfortowy, skandynawski styl, świetne zawieszenie",
+		otomotoUrl: "https://www.otomoto.pl/osobowe/volvo/xc60/od-2024?search%5Bfilter_enum_gearbox%5D=automatic&search%5Bfilter_float_mileage%3Ato%5D=100&search%5Border%5D=filter_float_price%3Aasc&search%5Badvanced_search_expanded%5D=true",
+		wwwExample: "https://www.google.com/search?q=volvo+xc60+2024",
+		imageUrls: ["/src/assets/xc60.jpeg", "/src/assets/xc60_2.jpeg", "/src/assets/xc60_3.jpeg", "/src/assets/xc60_int.jpeg", "/src/assets/xc60_int2.jpeg"],
+		wymiary: "4708 × 1902 × 1658 mm"
+	},
+	{
+		name: "Audi Q5",
+		engine: "40 TDI / 45 TFSI",
+		power: 204,
+		price: "240,000",
+		comments: "Precyzyjne prowadzenie, klasyczne wnętrze Audi",
+		otomotoUrl: "https://www.otomoto.pl/osobowe/audi/q5/od-2024",
+		wwwExample: "https://www.google.com/search?q=audi+q5+2024",
+		imageUrls: ["/src/assets/q5.jpeg", "/src/assets/q5_2.jpeg", "/src/assets/q5_3.jpeg", "/src/assets/q5_int.jpeg", "/src/assets/q5_int2.jpeg"],
+		wymiary: "4682 × 1893 × 1662 mm"
+	},
+	{
+		name: "BMW X3",
+		engine: "xDrive20i / 20d",
+		power: 184,
+		price: "245,000",
+		comments: "Sportowy charakter, świetna dynamika",
+		otomotoUrl: "https://www.otomoto.pl/osobowe/bmw/x3/od-2024",
+		wwwExample: "https://www.google.com/search?q=bmw+x3+2024",
+		imageUrls: ["/src/assets/x3.jpeg", "/src/assets/x3_2.jpeg", "/src/assets/x3_3.jpeg", "/src/assets/x3_int.jpeg", "/src/assets/x3_int2.jpeg"],
+		wymiary: "4708 × 1891 × 1676 mm"
+	},
+	{
+		name: "Mercedes-Benz GLC",
+		engine: "GLC 200 mild hybrid",
+		power: 204,
+		price: "260,000",
+		comments: "Luksusowy, cichy, bardzo dopracowany system MBUX",
+		otomotoUrl: "https://www.otomoto.pl/osobowe/mercedes-benz/glc/od-2024",
+		wwwExample: "https://www.google.com/search?q=mercedes+glc+2024",
+		imageUrls: ["/src/assets/glc.jpeg", "/src/assets/glc_2.jpeg", "/src/assets/glc_3.jpeg", "/src/assets/glc_int.jpeg", "/src/assets/glc_int2.jpeg"],
+		wymiary: "4716 × 1890 × 1640 mm"
+	},
+	{
+		name: "Lexus NX",
+		engine: "350h (pełna hybryda)",
+		power: 243,
+		price: "230,000",
+		comments: "Bezawaryjność, świetna hybryda, komfort",
+		otomotoUrl: "https://www.otomoto.pl/osobowe/lexus/nx/od-2024",
+		wwwExample: "https://www.google.com/search?q=lexus+nx+2024",
+		imageUrls: ["/src/assets/nx.jpeg", "/src/assets/nx_2.jpeg", "/src/assets/nx_3.jpeg", "/src/assets/nx_int.jpeg", "/src/assets/nx_int2.jpeg"],
+		wymiary: "4660 × 1865 × 1670 mm"
+	},
 ];
