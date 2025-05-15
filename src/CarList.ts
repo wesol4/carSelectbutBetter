@@ -169,4 +169,16 @@ cars = [
 		wymiary: "4660 × 1865 × 1670 mm",
 		yt: "https://www.youtube.com/watch?v=kmlyHoSRmdw"
 	},
+	{
+	name: "CUPRA Formentor",
+	engine: "2.0 TSI / e-Hybrid",
+	power: 204,
+	price: "215,000",
+	comments: "Sportowy charakter, ostre linie, świetna dynamika",
+	otomotoUrl: "https://www.otomoto.pl/osobowe/cupra/formentor/od-2024",
+	wwwExample: "https://www.google.com/search?q=cupra+formentor+2024",
+	imageUrls: ["/src/assets/formentor.jpeg", "/src/assets/formentor_2.jpeg", "/src/assets/formentor_3.jpeg", "/src/assets/formentor_int.jpeg", "/src/assets/formentor_int2.jpeg"],
+	wymiary: "4450 × 1839 × 1510 mm"
+	},
+
 ];
